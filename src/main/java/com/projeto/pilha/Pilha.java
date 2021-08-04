@@ -4,6 +4,10 @@ class No{
     private int dado;
     private No referencia;
 
+    public No(int dado){
+        this.dado = dado;
+    }
+
     public No() {
         this.referencia = null;
     }
@@ -63,4 +67,14 @@ public class Pilha {
          return refTopNo==null;
     }
 
+    @Override
+    public String toString() {
+        String nos = "-----------\n";
+        No noAuxiliar = refTopNo;
+        while(noAuxiliar!=null){
+            nos += noAuxiliar!=null?noAuxiliar.toString()+"\n":"";
+            noAuxiliar = noAuxiliar.getReferencia();
+        }
+        return nos;
+    }
 }
