@@ -2,7 +2,7 @@
 
  Exercícios do curso de Estrutura de Dados em Java
  
-[![NPM](https://img.shields.io/npm/l/react)]() 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/blob/main/LICENSE) 
 
 
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/atrubuicaoreferencia">Atribuição e Referência</a>
