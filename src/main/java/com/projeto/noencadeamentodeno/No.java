@@ -1,10 +1,11 @@
 package com.projeto.noencadeamentodeno;
 
-public class No {
-    private String conteudo;
-    private No proximoNo;
+public class No<T> {
 
-    public String getConteudo() {
+    private T conteudo;
+    private No<T> proximoNo;
+
+    public T getConteudo() {
         return conteudo;
     }
 
@@ -12,7 +13,7 @@ public class No {
         return proximoNo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
@@ -20,7 +21,7 @@ public class No {
         this.proximoNo = proximoNo;
     }
 
-    public No(String conteudo) {
+    public No(T conteudo) {
         this.conteudo = conteudo;
     }
 
@@ -28,7 +29,6 @@ public class No {
     public String toString() {
         return "No{" +
                 "conteudo='" + conteudo + '\'' +
-
                 '}';
     }
 }
