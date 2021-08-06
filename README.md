@@ -9,6 +9,7 @@
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/noencadeamentodeno">Nó e encadeamento de nó</a>
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/pilha">Pilha - LIFO</a>
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/fila">Fila - FIFO</a>
+- <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/listaencadeada">Lista Encadeada</a>
 
 # Autor
 
