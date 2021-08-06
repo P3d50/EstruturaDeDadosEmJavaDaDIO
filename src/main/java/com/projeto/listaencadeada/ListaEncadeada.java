@@ -14,11 +14,12 @@ public class ListaEncadeada<T> {
         if(i==0){
             refEntrada = noAlvo.getProximoNo();
             return (T)noAlvo.getConteudo();
+        }else {
+            No anterior = this.getNo(i-1);
+            No proximo = this.getNo(i+1);
+            anterior.setProximoNo(proximo);
+            return (T) noAlvo.getConteudo();
         }
-        No anterior = this.getNo(--i);
-        No proximo = this.getNo(++i);
-        anterior.setProximoNo(proximo);
-        return (T)noAlvo.getConteudo();
     }
 
     public T get(int i){
@@ -27,7 +28,6 @@ public class ListaEncadeada<T> {
     }
 
     private No getNo(int i){
-        this.validaIndice(i);
         No<T> noAux = refEntrada;
         int count =0;
         while(count<=size()-1){
@@ -61,8 +61,9 @@ public class ListaEncadeada<T> {
     public int size(){
         int tamanhoLista = 0;
         No noAuxiliar = refEntrada;
-        if(refEntrada!=null){
-            while (refEntrada.getProximoNo() != null) {
+        if(noAuxiliar!=null){
+            ++tamanhoLista;
+            while (noAuxiliar.getProximoNo() != null) {
                 tamanhoLista++;
                 noAuxiliar = noAuxiliar.getProximoNo();
             }
@@ -80,5 +81,16 @@ public class ListaEncadeada<T> {
             noAuxiliar = noAuxiliar.getProximoNo();
         }
         return noAuxiliar;
+    }
+
+    @Override
+    public String toString() {
+        String nos = "-----------\n";
+        No noAuxiliar = refEntrada;
+        while(noAuxiliar!=null){
+            nos += noAuxiliar!=null?noAuxiliar.getConteudo().toString()+"\n":"";
+            noAuxiliar = noAuxiliar.getProximoNo();
+        }
+        return nos;
     }
 }
