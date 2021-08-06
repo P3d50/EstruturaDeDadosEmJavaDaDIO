@@ -1,25 +1,25 @@
 package com.projeto.fila;
 import com.projeto.noencadeamentodeno.No;
 
-public class Fila {
+public class Fila<T> {
 
-    private No refFirstIn;
+    private No<T> refFirstIn;
 
     public Fila() {
         this.refFirstIn = null;
     }
 
-    public No dequeue(){
+    public T dequeue(){
         No auxNo = refFirstIn;
         refFirstIn = refFirstIn.getProximoNo();
-        return auxNo;
+        return (T)auxNo.getConteudo();
     }
 
-    public void enqueue(No proximoNo) {
+    public void enqueue(T dado) {
         if(!isEmpty()) {
-            getLast().setProximoNo(proximoNo);
+            getLast().setProximoNo(new No(dado));
         }else{
-            refFirstIn = proximoNo;
+            refFirstIn = new No(dado);
         }
     }
 
@@ -42,7 +42,7 @@ public class Fila {
         String nos = "-----------\n";
         No noAuxiliar = refFirstIn;
         while(noAuxiliar!=null){
-            nos += noAuxiliar!=null?noAuxiliar.toString()+"\n":"";
+            nos += noAuxiliar!=null?noAuxiliar.getConteudo().toString()+"\n":"";
             noAuxiliar = noAuxiliar.getProximoNo();
         }
         return nos;
