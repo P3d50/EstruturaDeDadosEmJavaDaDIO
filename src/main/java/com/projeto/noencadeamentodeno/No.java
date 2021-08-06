@@ -7,6 +7,16 @@ public class No<T> {
 
     public No(T conteudo) {
         this.conteudo = conteudo;
+        this.proximoNo = null;
+    }
+
+    public No(){
+        this.proximoNo=null;
+    }
+
+    public No(T conteudo, No<T> proximoNo) {
+        this.conteudo = conteudo;
+        this.proximoNo = proximoNo;
     }
 
     public T getConteudo() {
