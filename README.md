@@ -1,6 +1,6 @@
 # Estrutura de Dados em Java da <a href="https://digitalinnovation.one/">DIO</a>
 
- Este curso aborda a implementação das estruturas de dados, inicialmente sem utilizar os recusros de abstração e implementação das  bibliotecas do Java. Abordando os conceitos de Memória, atribuição e referência,  Nó e encadeamento de Nó, Generics, Pilhas-LIFO, Filas-FIFO, Listas Encadeadas, Listas Duplamente Encadeadas, Listas Circulares, Árvores. Ao final apresenta as pricipais implementações e abstrações de estruturas de dados disponíveis nas bibliotecas do Java.
+ Implementação de estruturas de dados. Abordando os conceitos de Memória, atribuição e referência,  Nó e encadeamento de Nó, Generics, Pilhas-LIFO, Filas-FIFO, Listas Encadeadas, Listas Duplamente Encadeadas, Listas Circulares, Árvores. Ao final apresenta as pricipais implementações e abstrações de estruturas de dados disponíveis nas bibliotecas do Java.
  
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/blob/main/LICENSE) 
 
