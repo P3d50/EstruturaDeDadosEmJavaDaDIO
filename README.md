@@ -10,6 +10,7 @@
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/pilha">Pilha - LIFO</a>
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/fila">Fila - FIFO</a>
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/listaencadeada">Lista Encadeada</a>
+- <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/listaduplamenteencadeada">Lista Duplamente Encadeada</a>
 
 # Autor
 
