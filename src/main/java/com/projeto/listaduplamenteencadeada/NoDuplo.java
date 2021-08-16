@@ -11,7 +11,7 @@ public class NoDuplo<T> {
     }
 
     public T getConteudo() {
-        return conteudo;
+        return this.conteudo;
     }
 
     public void setConteudo(T conteudo) {
@@ -36,10 +36,6 @@ public class NoDuplo<T> {
 
     @Override
     public String toString() {
-        return "NoDuplo{" +
-                "conteudo=" + conteudo +
-                ", noProximo=" + noProximo +
-                ", noPrevio=" + noPrevio +
-                '}';
+        return ""+conteudo;
     }
 }

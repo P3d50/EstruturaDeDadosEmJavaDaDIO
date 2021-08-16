@@ -9,13 +9,13 @@ public class Main {
         ListaDuplamenteEncadeada<String> encadeada = new ListaDuplamenteEncadeada<>();
         encadeada.add("Um");
         encadeada.add("Dois");
-        encadeada.add("Três");
+        encadeada.add(2,"Três");
         encadeada.add("Quatro");
         encadeada.add("Cinco");
 
-        System.out.println(encadeada);
-        System.out.printf("removendo: %s\n",encadeada.remove(1));
-        System.out.println(encadeada);
+        System.out.println(encadeada.toString());
+        encadeada.remove(1);
+        System.out.println(encadeada.toString());
 
 
     }

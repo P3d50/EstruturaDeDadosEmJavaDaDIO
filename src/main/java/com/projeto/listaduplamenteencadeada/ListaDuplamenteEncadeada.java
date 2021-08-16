@@ -1,7 +1,4 @@
 package com.projeto.listaduplamenteencadeada;
-
-import com.projeto.noencadeamentodeno.No;
-
 public class ListaDuplamenteEncadeada<T> {
 
 
@@ -53,6 +50,25 @@ public class ListaDuplamenteEncadeada<T> {
         tamanhoLista++;
     }
 
+
+    public void remove(int index){
+        if(index==0){
+            primeiroNo = primeiroNo.getNoProximo();
+            if(primeiroNo!=null){
+                primeiroNo.setNoPrevio(null);
+            }
+        }else{
+            NoDuplo<T> noAux = getNo(index);
+            noAux.getNoPrevio().setNoProximo(noAux.getNoProximo());
+            if(noAux != ultimoNo){
+                noAux.getNoProximo().setNoPrevio(noAux.getNoPrevio());
+            }else{
+                ultimoNo  = noAux;
+            }
+        }
+        this.tamanhoLista--;
+    }
+
     private NoDuplo<T> getNo(int index){
             NoDuplo<T> noAuxiliar = primeiroNo;
             for(int i=0;(i<index)&&(noAuxiliar!=null);i++){
@@ -62,12 +78,21 @@ public class ListaDuplamenteEncadeada<T> {
     }
 
     public int size(){
-        return this.tamanhoLista = 0;
+        return this.tamanhoLista;
     }
 
     public boolean isEmpty(){
         return tamanhoLista == 0;
     }
 
-
+    @Override
+    public String toString() {
+        String strRetorno = "";
+        NoDuplo<T> noAux = primeiroNo;
+        for(int i =0;i<size();i++){
+            strRetorno+="No -["+noAux.getConteudo()+"] -";
+            noAux=noAux.getNoProximo();
+        }
+        return strRetorno;
+    }
 }
