@@ -13,5 +13,11 @@ public class Main {
         lista.add("4");
         System.out.println(lista);
         System.out.println(lista.get(1).toString());
+
+        for(int i=0;i<20;i++){
+            System.out.println(lista.get(i));
+
+        }
+
     }
 }
