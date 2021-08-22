@@ -117,7 +117,7 @@ public class ArvoreBinaria <T extends Comparable<T>>{
                     ){
                         if(filho!=atual.getNoEsq()){
                             temp.setNoDir(filho.getNoEsq());
-                            filho.setNoEsq(atual.getNoEsq(););
+                            filho.setNoEsq(atual.getNoEsq());
                         }
                         filho.setNoDir(atual.getNoDir());
                         if(pai.getNoEsq() ==atual){
