@@ -28,9 +28,6 @@ public class No<T> {
 
     @Override
     public String toString() {
-        return "No{" +
-                "conteudo=" + conteudo +
-                ", noProximo=" + noProximo +
-                '}';
+        return "No{conteudo=" + conteudo +", noProximo=" + noProximo + "}";
     }
 }

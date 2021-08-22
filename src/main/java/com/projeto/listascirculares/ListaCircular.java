@@ -45,6 +45,9 @@ public class ListaCircular<T> {
             this.tamanhoLista--;
     }
 
+    public T get(int index){
+        return this.getNo(index).getConteudo();
+    }
     private No<T> getNo(int index){
         if(this.isEmpty()){
             throw new IndexOutOfBoundsException("a lista esta vazia");
