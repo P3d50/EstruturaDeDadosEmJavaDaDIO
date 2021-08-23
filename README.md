@@ -17,7 +17,9 @@
   - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/equalshashcode">Conceitos de equals hashCode</a> 
   - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/implementacaopadraojava/stack">Stack</a> 
   - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/implementacaopadraojava/queue">Queue</a> 
-  - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/implementacaopadraojava/list">List</a> 
+  - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/implementacaopadraojava/list">List</a>
+  - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/implementacaopadraojava/set">Set</a> 
+
 
  
 
