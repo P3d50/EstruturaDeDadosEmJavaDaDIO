@@ -2,7 +2,7 @@ package com.projeto.implementacaopadraojava;
 
 import java.util.Objects;
 
-public class Carro {
+public class Carro implements Comparable<Carro>{
 
     String marca;
 
@@ -36,5 +36,10 @@ public class Carro {
         return "Carro{" +
                 "marca='" + marca + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Carro o) {
+        return this.getMarca().compareTo(o.getMarca());
     }
 }
