@@ -6,7 +6,7 @@ import java.util.Queue;
 
 public class Main {
 
-    public static void main(String arg[]){
+    public static void main(String[] args){
         Queue<Carro> queue = new LinkedList<>();
         queue.add(new Carro("Ford"));
         queue.add(new Carro("Chev"));
@@ -22,8 +22,6 @@ public class Main {
         System.out.println(queue);
         System.out.println(queue.isEmpty());
         System.out.println(queue.size());
-
-
     }
 
 }
