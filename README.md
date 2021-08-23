@@ -13,6 +13,8 @@
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/listaduplamenteencadeada">Lista Duplamente Encadeada</a>
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/listascirculares">Lista Circular</a>
 - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/arvorebinaria">Arvore Binária</a>
+- Estruturas de dados, principais implementações das bibliotecas  padrão do Java
+  - <a href="https://github.com/P3d50/EstruturaDeDadosEmJavaDaDIO/tree/main/src/main/java/com/projeto/equalshashcode">Conceitos de equals hashCode</a> 
  
 
 # Autor
