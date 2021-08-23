@@ -1,10 +1,14 @@
-package com.projeto.equalshashcode;
+package com.projeto.implementacaopadraojava;
 
 import java.util.Objects;
 
 public class Carro {
 
-    private String marca;
+    String marca;
+
+    public Carro(String marca) {
+        this.marca = marca;
+    }
 
     public String getMarca() {
         return marca;
@@ -25,5 +29,12 @@ public class Carro {
     @Override
     public int hashCode() {
         return Objects.hash(marca);
+    }
+
+    @Override
+    public String toString() {
+        return "Carro{" +
+                "marca='" + marca + '\'' +
+                '}';
     }
 }
